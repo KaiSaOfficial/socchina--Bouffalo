@@ -8,7 +8,7 @@ bl_mcu_sdk源仓库: https://github.com/bouffalolab/bl_mcu_sdk
 
 ```
 
-bl_mcu_sdk
+project
 ├── bsp
 │   ├── board
 │   │   └── bl702
