@@ -1,0 +1,15 @@
+/.vscode
+/tools
+/zephyr
+/.idea
+/.xmake
+xmake
+build
+
+
+**/.cdk
+**/Lst
+**/Obj
+**/.vscode
+
+submodule_commit_info.*
