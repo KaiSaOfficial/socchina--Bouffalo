@@ -114,6 +114,10 @@ void get_time(Time_t* t) {
     t->min = atoi(timebuff.min);
     t->sec = atoi(timebuff.sec);
 
+    if (t->hour >= 24) {
+        t->hour -= 8;
+        t->date++;
+    }
 }
 
 void sync_step(void) {
@@ -156,7 +160,7 @@ void update_time(Time_t* t) {
         t->hour++;
     }
 
-    if (t->hour == 24) {
+    if (t->hour >= 24) {
         t->hour = 0;
         t->date++;
     }
